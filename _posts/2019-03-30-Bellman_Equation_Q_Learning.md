@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "LSTM"
+date:   2018-12-28 
+categories: 
+---
+
+## LSTM Structure
+LSTM has the most complex structure out of the RNN universe
+
+{% highlight python %}
+def print_hi(name)
+  print("Hi, #{name}")
+
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
