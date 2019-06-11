@@ -38,10 +38,10 @@ Gradient calculation in mathematical terms means, finding the derivative of your
     gradient = - np.matmul(x.T,error)
 ```
 * Moment 1
+Moment 1 is a moving average of the prior gradient values. There is a slight twist here. There are two contributions here
   * Prior Moment
   * Current Gradient
   
-Moment 1 is a moving average of the prior gradient values. There is a slight twist here. There are two contributions here
 
 ``` python
  moment1 = (beta1 * moment1) + ( 1 - beta1) * gradient
