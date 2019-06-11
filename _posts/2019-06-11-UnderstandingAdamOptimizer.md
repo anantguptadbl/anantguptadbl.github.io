@@ -17,10 +17,10 @@ Let us consider a simple Linear Regression problem statement for this example
 
 <img height="300" width="300" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Linear_regression.svg/1280px-Linear_regression.svg.png">
 
-For the above image, below is the representative equation <\br>
+For the above image, below is the representative equation <br/>
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;y=w.x" title="Linear Regression Example"/>
 
-Objective function gets translated to <\br>
+Objective function gets translated to <br/>
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;\min\sum_{i}^{n}{(y_i-wx_i)}^2" title="OLS Objective Function"/>
 where n = number of rows
 
