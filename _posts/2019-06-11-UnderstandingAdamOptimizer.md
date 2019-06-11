@@ -39,16 +39,16 @@ Gradient calculation in mathematical terms means, finding the derivative of your
 ```
  *  Moment 1
 Moment 1 is a moving average of the prior gradient values. There is a slight twist here. There are two contributions here
-  - Prior Moment
-  - Current Gradient
+  * Prior Moment
+  * Current Gradient
 ``` python
  moment1 = (beta1 * moment1) + ( 1 - beta1) * gradient
 ```
 
  *  Moment 2
 Moment 2 is a moving average of the prior gradient values squared. There is a slight twist here too. There are two contributions here
-  - Prior Moment 
-  - Current Gradient Squared
+  * Prior Moment 
+  * Current Gradient Squared
 ``` python
  moment2 = (beta2 * moment2) + ( 1 - beta2) * np.power(gradient,2)
 ```
