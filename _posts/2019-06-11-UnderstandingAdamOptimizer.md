@@ -44,10 +44,11 @@ Moment 1 is a moving average of the prior gradient values. There is a slight twi
  moment1 = (beta1 * moment1) + ( 1 - beta1) * gradient
 ```
 
- * **Moment 2**
+* **Moment 2** <br/>
 Moment 2 is a moving average of the prior gradient values squared. There is a slight twist here too. There are two contributions here
   * Prior Moment : There is a large weight assigned to the prior moment
-  * Current Gradient Squared : There is a small weight assigned to the current gradient
+  * Current Gradient : There is a small weight assigned to the current gradient
+
 ``` python
  moment2 = (beta2 * moment2) + ( 1 - beta2) * np.power(gradient,2)
 ```
