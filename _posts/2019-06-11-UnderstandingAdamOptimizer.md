@@ -58,9 +58,8 @@ Moment 2 is a moving average of the prior gradient values squared. There is a sl
  *  **Weight updates**
  
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
-Jekyll also offers powerful support for code snippets:
+ * **Final Code**
 
 ``` python
 # Adam Optimizer
@@ -92,6 +91,8 @@ for iterationCount in range(1000000):
     if((np.sum(np.power(error,2))/x.shape[0]) < 1):
         break
 ```
+
+ * **Analysis**
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
