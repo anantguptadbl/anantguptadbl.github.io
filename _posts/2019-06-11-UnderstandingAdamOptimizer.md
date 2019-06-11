@@ -46,7 +46,7 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 Jekyll also offers powerful support for code snippets:
 
-{% highlight python %}
+``` python
 # Adam Optimizer
 
 # Sample Data
@@ -75,7 +75,7 @@ for iterationCount in range(1000000):
         print("epoch {0} RMSE Error {1}".format(iterationCount,np.sum(np.power(error,2))/x.shape[0]))
     if((np.sum(np.power(error,2))/x.shape[0]) < 1):
         break
-{% endhighlight %}
+```
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
