@@ -16,13 +16,13 @@ If you are able to understand and code up the optimizers, you get a good underst
 Let us consider a simple Linear Regression problem statement for this example
 
 <img height="300" width="300" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Linear_regression.svg/1280px-Linear_regression.svg.png">
-
-For the above image, the representative **equation** is 
+ * **Equation**
+For the above image, the representative equation is 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;y=w.x" title="Linear Regression Example"/>
 
-The **Objective function** gets translated to <img src="https://latex.codecogs.com/svg.latex?\Large&space;\min\sum_{i}^{n}{(y_i-wx_i)}^2" title="OLS Objective Function"/> <br/>
+ * **Objective Function**
+The Objective function gets translated to <img src="https://latex.codecogs.com/svg.latex?\Large&space;\min\sum_{i}^{n}{(y_i-wx_i)}^2" title="OLS Objective Function"/> <br/>
 
-The 6 major sections in understanding Adam Optimizer are the following
  *  **Gradient**
 Gradient calculation in mathematical terms means, finding the derivative of your Objective Function w.r.t the variable that you are trying to calculate
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;Gradient=\frac{d}{dw}\min\sum_{i}^{n}{(y_i-wx_i)}^2" title="Differentiate Objective Function 1"/>
@@ -51,9 +51,10 @@ Moment 2 is a moving average of the prior gradient values squared. There is a sl
 ``` python
  moment2 = (beta2 * moment2) + ( 1 - beta2) * np.power(gradient,2)
 ```
- *  Moment 1 Scaling
- *  Moment 2 Scaling
- *  Weight updates
+
+ *  **Moment 1 Scaling**
+ *  **Moment 2 Scaling**
+ *  **Weight updates**
  
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
