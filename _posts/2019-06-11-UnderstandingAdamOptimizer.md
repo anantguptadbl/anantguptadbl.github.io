@@ -15,7 +15,7 @@ If you are able to understand and code up the optimizers, you get a good underst
 
 Let us consider a simple Linear Regression problem statement for this example
 
-<img height="100" width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Linear_regression.svg/1280px-Linear_regression.svg.png">
+<img height="300" width="300" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Linear_regression.svg/1280px-Linear_regression.svg.png">
 
 For the above image, below is the representative equation <\br>
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;y=w.x" title="Linear Regression Example"/>
