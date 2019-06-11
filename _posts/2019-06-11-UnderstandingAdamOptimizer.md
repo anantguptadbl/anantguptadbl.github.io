@@ -21,10 +21,10 @@ For the above image, the equation is laid down in the following manner
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;y= w . x" title="Linear Regression Example"/>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;y=w.x" title="Linear Regression Example"/>
 
 Objective function gets translated to
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;\min \sum{(y - w.x)}^2" title="OLS Objective Function"/>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;\min\sum{(y-w.x)}^2" title="OLS Objective Function"/>
 
 The 6 major sections in understanding Adam Optimizer are the following
  *  Gradient
