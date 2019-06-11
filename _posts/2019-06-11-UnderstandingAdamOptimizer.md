@@ -37,12 +37,11 @@ Gradient calculation in mathematical terms means, finding the derivative of your
     error= y - np.matmul(x,weights.T)
     gradient = - np.matmul(x.T,error)
 ```
-* Moment 1
+* Moment 1 <br/>
 Moment 1 is a moving average of the prior gradient values. There is a slight twist here. There are two contributions here
   * Prior Moment
   * Current Gradient
   
-
 ``` python
  moment1 = (beta1 * moment1) + ( 1 - beta1) * gradient
 ```
