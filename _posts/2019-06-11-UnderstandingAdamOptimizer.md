@@ -15,7 +15,16 @@ If you are able to understand and code up the optimizers, you get a good underst
 
 Let us consider a simple Linear Regression problem statement for this example
 
+<img src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjWo7HqtuHiAhUaU30KHX_jCVAQjRx6BAgBEAU&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FOrdinary_least_squares&psig=AOvVaw2wbF62AkGJALM-IefYvBQ8&ust=1560342473867397">
+
+For the above image, the equation is laid down in the following manner
+
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
+
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;y= w . x" />
+
+Objective function gets translated to
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;\min \sum{(y - w.x)}^2" />
 
 The 6 major sections in understanding Adam Optimizer are the following
  *  Gradient
