@@ -12,9 +12,16 @@ I would like to discuss one of the  Optimizers that has become very popular nowa
 If you are able to understand and code up the optimizers, you get a good understanding of hyper parameter tuning
 
 ### Methodology
+
+Let us consider a simple Linear Regression problem statement for this example
+
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
+
 The 6 major sections in understanding Adam Optimizer are the following
  *  Gradient
+Gradient calculation in mathematical terms means, finding the derivative of your Objective Function w.r.t the variable that you are trying to calculate
  *  Moment 1
+
  *  Moment 2
  *  Moment 1 Scaling
  *  Moment 2 Scaling
