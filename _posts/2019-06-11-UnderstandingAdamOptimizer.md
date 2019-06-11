@@ -28,8 +28,8 @@ where n = number of rows
 The 6 major sections in understanding Adam Optimizer are the following
  *  Gradient
 Gradient calculation in mathematical terms means, finding the derivative of your Objective Function w.r.t the variable that you are trying to calculate
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;\frac{d}{dw}\min\sum_{i}^{n}{(y_i-wx_i)}^2" title="Differentiate Objective Function 1"/>
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;Gradient=\frac{d}{dw}\min{(y-w.x)}^2" title="Differentiate Objective Function 2"/>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;Gradient=\frac{d}{dw}\min\sum_{i}^{n}{(y_i-wx_i)}^2" title="Differentiate Objective Function 1"/>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;\frac{d}{dw}\min{(y-w.x)}^2" title="Differentiate Objective Function 2"/>
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;2{(y-wx)}\frac{d}{dw}{-w.x}" title="Differentiate Objective Function 3"/>
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;If\hspaceE={(y-wx)}" title="Differentiate Objective Function 4"/>
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;Gradient\hspace=\hspace-2Ex" title="Differentiate Objective Function 4"/>
@@ -46,12 +46,35 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 Jekyll also offers powerful support for code snippets:
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+{% highlight python %}
+# Adam Optimizer
+
+# Sample Data
+y=np.array([1,2,3,4,5,6,7,8,9,10]).reshape(10,1)
+x=np.array([[2,4,6,8,10,12,14,16,18,20],[3,6,9,12,15,18,21,24,27,30]]).reshape(10,2)
+
+# Weight Initialization
+weights=np.random.rand(2).reshape(1,2)
+
+alpha=0.0001
+beta1=0.9
+beta2=0.999
+epsilon = 1.000000 / np.power(10,8)
+moment1=np.zeros(x.shape[1]).reshape(2,1)
+moment2=np.zeros(x.shape[1]).reshape(2,1)
+
+for iterationCount in range(1000000):
+    error= y - np.matmul(x,weights.T)
+    gradient = - np.matmul(x.T,error)
+    moment1 = (beta1 * moment1) + ( 1 - beta1) * gradient
+    moment2 = (beta2 * moment2) + ( 1 - beta2) * np.power(gradient,2)
+    moment1hat = moment1 / ( 1 - np.power(beta1,iterationCount+1))
+    moment2hat = moment2 / ( 1 - np.power(beta2,iterationCount+1))
+    weights = weights - ((alpha * moment1hat) / ( np.sqrt(moment2hat) + epsilon )).T
+    if(iterationCount % 10000 ==0):
+        print("epoch {0} RMSE Error {1}".format(iterationCount,np.sum(np.power(error,2))/x.shape[0]))
+    if((np.sum(np.power(error,2))/x.shape[0]) < 1):
+        break
 {% endhighlight %}
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
