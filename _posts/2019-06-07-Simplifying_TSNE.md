@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "LSTM"
+title:  "Simplifying TSNE"
 date:   2018-12-28 
 categories: 
 ---
