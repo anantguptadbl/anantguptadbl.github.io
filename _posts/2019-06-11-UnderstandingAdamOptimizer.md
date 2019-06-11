@@ -34,9 +34,25 @@ Gradient calculation in mathematical terms means, finding the derivative of your
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;If\hspaceE={(y-wx)}" title="Differentiate Objective Function 4"/>
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;Gradient\hspace=\hspace-2Ex" title="Differentiate Objective Function 4"/>
 
+```python
+    error= y - np.matmul(x,weights.T)
+    gradient = - np.matmul(x.T,error)
+```
  *  Moment 1
+Moment 1 is a moving average of the prior gradient values. There is a slight twist here. There are two contributions here
+ - Prior Moment
+ - Current Gradient
+``` python
+ moment1 = (beta1 * moment1) + ( 1 - beta1) * gradient
+```
 
  *  Moment 2
+Moment 2 is a moving average of the prior gradient values squared. There is a slight twist here too. There are two contributions here
+ - Prior Moment 
+ - Current Gradient Squared
+``` python
+ moment2 = (beta2 * moment2) + ( 1 - beta2) * np.power(gradient,2)
+```
  *  Moment 1 Scaling
  *  Moment 2 Scaling
  *  Weight updates
