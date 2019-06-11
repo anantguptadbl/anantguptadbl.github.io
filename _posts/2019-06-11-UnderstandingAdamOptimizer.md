@@ -6,10 +6,20 @@ categories: Optimizers
 ---
 
 Optimizers are the backbone of any machine learning algorithm, be it a simple Linear Regression OLS or be it GAN's, and RESNETs etc
-I would like to discuss one of the  Optimizers that has become very popular nowadays *Adam Optimizer*
+I would like to discuss one of the  Optimizers that has become very popular nowadays **Adam Optimizer**
 
-# Inspiration
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+### Inspiration
+If you are able to understand and code up the optimizers, you get a good understanding of hyper parameter tuning
+
+### Methodology
+The 6 major sections in understanding Adam Optimizer are the following
+ *  Gradient
+ *  Moment 1
+ *  Moment 2
+ *  Moment 1 Scaling
+ *  Moment 2 Scaling
+ *  Weight updates
+ 
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
