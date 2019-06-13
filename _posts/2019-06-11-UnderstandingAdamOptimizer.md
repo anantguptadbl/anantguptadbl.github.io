@@ -25,10 +25,13 @@ The Objective function gets translated to <img src="https://latex.codecogs.com/s
 
  *  **Gradient**
 Gradient calculation in mathematical terms means, finding the derivative of your Objective Function w.r.t the variable that you are trying to calculate
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;Gradient=\frac{d}{dw}\min\sum_{i}^{n}{(y_i-wx_i)}^2" title="Differentiate Objective Function 1"/>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;Gradient=\frac{d}{dw}\min\sum_{i}^{n}{(y_i-wx_i)}^2" title="Differentiate Objective Function 1"/><br/>
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;\frac{d}{dw}\min{(y-w.x)}^2" title="Differentiate Objective Function 2"/>
+<br/>
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;2{(y-wx)}\frac{d}{dw}{-w.x}" title="Differentiate Objective Function 3"/>
+<br/>
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;If\hspaceE={(y-wx)}" title="Differentiate Objective Function 4"/>
+<br/>
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;Gradient\hspace=\hspace-2Ex" title="Differentiate Objective Function 4"/>
 
 ```python
