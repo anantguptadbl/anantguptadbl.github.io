@@ -57,10 +57,22 @@ Moment 2 is a moving average of the prior gradient values squared. There is a sl
 ```
 
  *  **Moment 1 Scaling**
- *  **Moment 2 Scaling**
- *  **Weight updates**
- 
+Moment1 Scaling, adjusts the Moment 1 value so that with every step, the value scales down further
 
+``` python
+moment1hat = moment1 / ( 1 - np.power(beta1,iterationCount+1))
+```
+ *  **Moment 2 Scaling**
+Moment2 Scaling, adjusts the Moment 2 value so that with every step, the value scales down further
+
+``` python
+moment2hat = moment2 / ( 1 - np.power(beta2,iterationCount+1))
+```
+ *  **Weight updates**
+The adjustment to the weights takes into consideration moment1hat and inverse squareRoot of moment2hat multiplied with the learning rate  ( alpha )
+```python
+weights = weights - ((alpha * moment1hat) / ( np.sqrt(moment2hat) + epsilon )).T
+```
 
  * **Final Code**
 
