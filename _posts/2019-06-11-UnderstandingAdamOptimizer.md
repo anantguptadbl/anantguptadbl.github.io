@@ -56,25 +56,27 @@ Moment 2 is a moving average of the prior gradient values squared. There is a sl
  moment2 = (beta2 * moment2) + ( 1 - beta2) * np.power(gradient,2)
 ```
 
- *  **Moment 1 Scaling**
+ *  **Moment 1 Scaling** <br/>
 Moment1 Scaling, adjusts the Moment 1 value so that with every step, the value scales down further
 
 ``` python
 moment1hat = moment1 / ( 1 - np.power(beta1,iterationCount+1))
 ```
- *  **Moment 2 Scaling**
+ *  **Moment 2 Scaling** <br/>
 Moment2 Scaling, adjusts the Moment 2 value so that with every step, the value scales down further
+
 
 ``` python
 moment2hat = moment2 / ( 1 - np.power(beta2,iterationCount+1))
 ```
- *  **Weight updates**
+ *  **Weight updates** <br/>
 The adjustment to the weights takes into consideration moment1hat and inverse squareRoot of moment2hat multiplied with the learning rate  ( alpha )
+The term 1/sqrt(moment2hat) is termed as the **Initialization Bias**
 ```python
 weights = weights - ((alpha * moment1hat) / ( np.sqrt(moment2hat) + epsilon )).T
 ```
 
- * **Final Code**
+ * **Final Code** <br/>
 
 ``` python
 # Adam Optimizer
