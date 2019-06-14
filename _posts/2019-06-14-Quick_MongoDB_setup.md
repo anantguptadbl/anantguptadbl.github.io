@@ -32,14 +32,14 @@ Run the following command
 mongod
 
 We will see a screen that looks something like this
-<img src="images/mongod.png" style="float: left; margin-right: 10px;" />
+<img src="https://raw.githubusercontent.com/anantguptadbl/anantguptadbl.github.io/master/images/mongod.png" style="float: left; margin-right: 10px;" />
 
 ##### Step 5
 Run the following command
 mongo
 
 We will see a command prompt from where we can run all the mongo DB commands
-<img src="images/mongo.png" style="float: left; margin-right: 10px;" />
+<img src=https://raw.githubusercontent.com/anantguptadbl/anantguptadbl.github.io/master/images/mongo.png" style="float: left; margin-right: 10px;" />
 
 ``` python
 # This is a simple repeated data set
