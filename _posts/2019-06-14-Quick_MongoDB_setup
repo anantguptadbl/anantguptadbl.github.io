@@ -12,8 +12,34 @@ MongoDB is a very actively used No-SQL database. An advantage of using this is t
 We will be installing MongoDB Community Edition on a Windows machine. The steps are similar for a Linux installation as well
 
 #### Downloading the installer
-Go to the link https://www.mongodb.com/download-center/community?jmp=docs
 
+##### Step 1
+Go to the link https://www.mongodb.com/download-center/community?jmp=docs
+and click on the download link
+
+<img src="images/MongoDBPage.png" style="float: left; margin-right: 10px;" />
+
+##### Step 2
+Once the installation is complete, make the following directory 
+C:\data\db
+
+##### Step 3
+Traverse to the following path
+C:\Program Files\MongoDB\Server\4.0\bin
+
+##### Step 4
+Run the following command
+mongod
+
+We will see a screen that looks something like this
+<img src="images/mongod.png" style="float: left; margin-right: 10px;" />
+
+##### Step 5
+Run the following command
+mongo
+
+We will see a command prompt from where we can run all the mongo DB commands
+<img src="images/mongo.png" style="float: left; margin-right: 10px;" />
 
 ``` python
 # This is a simple repeated data set
