@@ -17,7 +17,7 @@ We will be installing MongoDB Community Edition on a Windows machine. The steps 
 Go to the link https://www.mongodb.com/download-center/community?jmp=docs
 and click on the download link
 
-<img src="../images/mongoDBPage.png" style="float: left; margin-right: 10px;" />
+<img src="https://raw.githubusercontent.com/anantguptadbl/anantguptadbl.github.io/master/images/mongoDBPage.png" style="float: left; margin-right: 10px;" />
 
 ##### Step 2
 Once the installation is complete, make the following directory 
