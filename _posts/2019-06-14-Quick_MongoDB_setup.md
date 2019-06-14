@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Quickly Setting up MongoDB"
+title:  "Quickly Setting up MongoDB ( Windows )"
 date:   2019-06-14 
 categories: 
 ---
@@ -41,8 +41,6 @@ mongo
 We will see a command prompt from where we can run all the mongo DB commands
 <img src="https://raw.githubusercontent.com/anantguptadbl/anantguptadbl.github.io/master/images/mongo.png" style="float: left; margin-right: 10px;" />
 
-``` python
-# This is a simple repeated data set
-data=np.array([0,1,0,-1,-1,0,1,0,-1,-1,0,1,0,-1,-1,0,1,0,-1,-1])
-data=np.array(list(data)*100)
-```
+#### Congratulations
+
+You are now ready to use MongoDB on your system. You can reference several tutorials on the various commands used in the **mongo** CLI
