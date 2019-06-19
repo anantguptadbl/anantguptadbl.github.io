@@ -1,1 +1,17 @@
+---
+layout: post
+title:  "Apache KAKFA in Windows"
+date:   2018-12-28 
+categories: 
+---
 
+## Apache Kafka
+Apache Kafka is an application that is quickly gaining momentum to perform scalable operations between multiple producers and multiple consumers
+
+We will consider the following input data
+
+``` python
+# This is a simple repeated data set
+data=np.array([0,1,0,-1,-1,0,1,0,-1,-1,0,1,0,-1,-1,0,1,0,-1,-1])
+data=np.array(list(data)*100)
+```
