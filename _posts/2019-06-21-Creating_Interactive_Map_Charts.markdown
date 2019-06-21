@@ -124,4 +124,27 @@ Highcharts.mapChart('container', {
 
 ### Combine all the above 3 in order into a single HTML File
 
-<img src="https://raw.githubusercontent.com/anantguptadbl/anantguptadbl.github.io/master/images/DynamicHighCharts.png" style="float: left; margin-right: 10px;" />
+<img src="https://raw.githubusercontent.com/anantguptadbl/anantguptadbl.github.io/master/images/Chart1.png" style="float: left; margin-right: 10px;" />
+
+### Important Configurations
+
+#### Map
+In the line
+``` javascript
+chart: {
+        map: 'countries/in/in-all'
+    },
+ ```
+ We are mentioning the region in/in-all which means India. The list of all such regions is present here
+ http://code.highcharts.com/mapdata/?_ga=2.240186051.15578447.1561097806-1754947431.1560948026
+ 
+ #### Tooltip
+ In the following code
+ ```
+ tooltip: {
+        headerFormat: '',
+        pointFormat: '<b>{point.name}</b><br>Lat: {point.lat}, Lon: {point.lon}'
+    },
+
+ ```
+We are using three variables from the list of Dicts **lat** **lon** and **name**. You can add as many as you want here
