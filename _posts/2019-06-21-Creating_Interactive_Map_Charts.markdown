@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Creating Interactive Maps using HighCharts"
-date:   2018-12-28 
+date:   2019-06-21 
 categories: 
 ---
 
