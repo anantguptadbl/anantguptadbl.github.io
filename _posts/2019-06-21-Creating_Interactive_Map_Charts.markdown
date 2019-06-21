@@ -116,8 +116,11 @@ Highcharts.mapChart('container', {
         name: 'Cities',
         color: Highcharts.getOptions().colors[1],
 		data:[{'name': 'KO5490_1KM', 'lat': 28.477778000000004, 'lon': 77.129722},
- {'name': 'KP5079_1KM', 'lat': 28.5375, 'lon': 77.271694},
- {'name': 'CS4375_2KM', 'lat': 28.910079999999997, 'lon': 77.10876}]
+ {'name': 'City1', 'lat': 28.5375, 'lon': 77.271694},
+ {'name': 'City2', 'lat': 28.910079999999997, 'lon': 77.10876}]
      }]
 });
 ```
+
+### Combine all the above 3 in order into a single HTML File
+
