@@ -124,3 +124,4 @@ Highcharts.mapChart('container', {
 
 ### Combine all the above 3 in order into a single HTML File
 
+<img src="https://raw.githubusercontent.com/anantguptadbl/anantguptadbl.github.io/master/images/DynamicHighCharts.png" style="float: left; margin-right: 10px;" />
